@@ -28,10 +28,16 @@ namespace DogBook.Data.Models
 
         public DateTime? DeletedOn { get; set; }
 
+        public virtual ICollection<Dog> Dogs { get; set; }
+
         public virtual ICollection<IdentityUserRole<string>> Roles { get; set; }
 
         public virtual ICollection<IdentityUserClaim<string>> Claims { get; set; }
 
         public virtual ICollection<IdentityUserLogin<string>> Logins { get; set; }
+
+        public virtual ICollection<ApplicationUser> Friends { get; set; }
+
+        public virtual ICollection<Post> Posts { get; set; }
     }
 }

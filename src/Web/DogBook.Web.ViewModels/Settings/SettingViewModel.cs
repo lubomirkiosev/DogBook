@@ -1,9 +1,8 @@
 ﻿namespace DogBook.Web.ViewModels.Settings
 {
+    using AutoMapper;
     using DogBook.Data.Models;
     using DogBook.Services.Mapping;
-
-    using AutoMapper;
 
     public class SettingViewModel : IMapFrom<Setting>, IHaveCustomMappings
     {
